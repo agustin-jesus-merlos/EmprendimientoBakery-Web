@@ -1,0 +1,257 @@
+/*LOGO HEADER*/
+.logo {
+    width: 250px; /* Cambia el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    margin: 0px; /* Espacio alrededor del logo */
+    margin-top: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+
+/* SECTION.2*/ 
+
+.section-historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#historia {
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.card-body {
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title2 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+
+.card-text {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*FOOTER*/
+
+.footer {
+    display: flex;
+    background-color: #cd5a77;
+    justify-content: space-around;
+    margin: 0;
+    height: 250px;
+}
+
+.footer h2 {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.footer .footer-contacto .items-contacto {
+    list-style: none;
+    padding: 10px;
+}
+
+.footer .footer-contacto .items-contacto li {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer .footer-contacto .items-contacto li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.footer .footer-contacto .items-contacto li p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.footer .footer-contacto2 .items-contacto2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: -10px;
+}
+
+.footer .footer-contacto2 .items-contacto2 li {
+    display: flex;
+    margin: 20px;
+}
+
+.icons2 {
+    width: 50px;
+}
+
+/*titulos*/
+
+.titulo h2 {
+    color: sienna;
+    font-family: Sacramento;
+    font-size: 90px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px 20px 10px;
+    
+}
+
+.titulo p {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.sacramento-regular {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /*seccion productos
+  .productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #fff;
+    width: 200px;
+    text-align: center;
+}
+.producto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+.nombre {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.precio {
+    color: green;
+    font-size: 16px;
+}
+    
+
+/* seccion contacto*/
+
+.seccion-contacto .formulario-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px 50px 50px;
+}
+
+.form h4 {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.form-label {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.boton-enviar {
+    color: black;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.mapa-ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/*servicios*/
+
+.producto {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 24px; /* Aumentado para más espacio */
+    text-align: center;
+    margin: 15px;
+    transition: transform 0.2s;
+    width: 300px; /* Ancho fijo para uniformidad */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidad */
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto-imagen {
+    width: 100%;
+    border-radius: 8px;
+    height: auto; /* Mantener la proporción */
+}
+
+.nombre {
+    font-size: 1.8em; /* Aumentado */
+    margin: 12px 0;
+}
+
+.precio {
+    font-size: 1.5em; /* Aumentado */
+    color: #28a745; /* Color verde para el precio */
+    margin-bottom: 12px;
+}
+
+.descripcion {
+    font-size: 1em; /* Aumentado */
+    color: #555; /* Color gris para la descripción */
+    margin: 12px 0;
+}
+
+.btn-comprar {
+    background-color: #007bff; /* Color azul */
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Aumentado para más área clicable */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em; /* Aumentado */
+    transition: background-color 0.3s; /* Suavizado de transición */
+}
+
+.btn-comprar:hover {
+    background-color: #0056b3; /* Color azul más oscuro al pasar el ratón */
+}
