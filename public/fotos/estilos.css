@@ -18,7 +18,7 @@
 }
 
 #historia {
-    margin-top: 70px;
+    margin-top: 0px;
     justify-content: space-between;
     align-items: center;
     border: none;
@@ -255,3 +255,16 @@
 .btn-comprar:hover {
     background-color: #0056b3; /* Color azul más oscuro al pasar el ratón */
 }
+
+/*items del header*/
+.nav-item {
+    color: seashell;
+    
+}
+
+:hover.nav-item {
+    color: firebrick;
+    
+}
+
+

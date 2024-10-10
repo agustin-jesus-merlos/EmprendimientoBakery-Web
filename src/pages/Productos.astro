@@ -4,55 +4,59 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Bakery Shop" description="sitio web de pasteleria">
 	
-    <section class="titulo">
-        <h2>Productos</h2>
-        <p>¡Bienvenidos a nuestro rincón dulce! <p>Donde la pasión por la pastelería se convierte en deliciosas creaciones. 
-           En nuestra tienda, ofrecemos una amplia variedad de productos elaborados con los mejores ingredientes y un toque artesanal.
-           Desde esponjosos tortas y suaves budines hasta exquisitas medialunas y postres gourmet. ¡Cada bocado es una experiencia única!</p>
-        </p>
-        
-           
-        <div class="flex justify-between p-4">
-            <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
-                <img src="/fotos/Productos/medialunas.jpg" alt="Medialunas" class="w-full rounded-lg mb-4">
-                <div class="nombre text-2xl mb-2">Medialunas</div>
-                <div class="precio text-xl text-green-600 mb-2">$10.00</div>
-                <div class="descripcion text-gray-600 mb-4">Estas suaves y hojaldradas delicias son ideales para disfrutar en el desayuno, la merienda o en cualquier momento.</div>
-                <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
-            </div>
-        
-            <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
-                <img src="/fotos/Productos/croissant1-min.jpg" alt="Croissant" class="w-full rounded-lg mb-4">
-                <div class="nombre text-2xl mb-2">Croissant</div>
-                <div class="precio text-xl text-green-600 mb-2">$10.00</div>
-                <div class="descripcion text-gray-600 mb-4">Nuestros croissants son irresistibles. Cada bocado es un viaje al corazon de la pastelería francesa.</div>
-                <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
-            </div>
+    <section class="titulo" >
+        <div id="Productos" ></div>
 
-            <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
-                <img src="/fotos/Productos/cookies1-min.jpg" alt="Cookies" class="w-full rounded-lg mb-4">
-                <div class="nombre text-2xl mb-2">Cookies</div>
-                <div class="precio text-xl text-green-600 mb-2">$10.00</div>
-                <div class="descripcion text-gray-600 mb-4">¡El snack perfecto! Crujiente por fuera y suave por dentro, son una explosión de sabor en cada bocado.</div>
-                <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
-            </div>
-      
-            <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
-                <img src="/fotos/Productos/torta1-min.jpg" alt="Tortas" class="w-full rounded-lg mb-4">
-                <div class="nombre text-2xl mb-2">Tortas</div>
-                <div class="precio text-xl text-green-600 mb-2">$10.00</div>
-                <div class="descripcion text-gray-600 mb-4">¡Descubrí nuestras exquisitas tortas! El centro de atención perfecto para cualquier celebración!</div>
-                <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
-            </div>
         
-            <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
-                <img src="/fotos/Productos/budines1-min.jpg" alt="Budines" class="w-full rounded-lg mb-4">
-                <div class="nombre text-2xl mb-2">Budines</div>
-                <div class="precio text-xl text-green-600 mb-2">$10.00</div>
-                <div class="descripcion text-gray-600 mb-4">¡Disfruta de nuestros deliciosos budines en cualquier momento del dia! Ricos y caseros, combinan sabor y suavidad.</div>
-                <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
-            </div>
-        </div>
+                <h2>Productos</h2>
+                <p>¡Bienvenidos a nuestro rincón dulce! <p>Donde la pasión por la pastelería se convierte en deliciosas creaciones. 
+                En nuestra tienda, ofrecemos una amplia variedad de productos elaborados con los mejores ingredientes y un toque artesanal.
+                Desde esponjosos tortas y suaves budines hasta exquisitas medialunas y postres gourmet. ¡Cada bocado es una experiencia única!</p>
+                </p>
+                
+                
+                <div class="flex justify-between p-4">
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/medialunas.jpg" alt="Medialunas" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Medialunas</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">Estas suaves y hojaldradas delicias son ideales para disfrutar en el desayuno, la merienda o en cualquier momento.</div>
+                        <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
+                    </div>
+                
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/croissant1-min.jpg" alt="Croissant" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Croissant</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">Nuestros croissants son irresistibles. Cada bocado es un viaje al corazon de la pastelería francesa.</div>
+                        <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
+                    </div>
+
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/cookies1-min.jpg" alt="Cookies" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Cookies</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">¡El snack perfecto! Crujiente por fuera y suave por dentro, son una explosión de sabor en cada bocado.</div>
+                        <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
+                    </div>
+            
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/torta1-min.jpg" alt="Tortas" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Tortas</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">¡Descubrí nuestras exquisitas tortas! El centro de atención perfecto para cualquier celebración!</div>
+                        <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
+                    </div>
+                
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/budines1-min.jpg" alt="Budines" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Budines</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">¡Disfruta de nuestros deliciosos budines en cualquier momento del dia! Ricos y caseros, combinan sabor y suavidad.</div>
+                        <button class="btn-comprar bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors duration-300">Comprar Ahora</button>
+                    </div>
+                </div>
+        
 
     </section>
 

@@ -1,7 +1,84 @@
 ---
 ---
 <section>
-    <img class="w-auto h-auto object-fill brightness-40 bg-cover bg-contain" src=""> 
-</img>
+    <div class="bg-gray-100">
+        <div class="max-w-full mx-auto mt-10 relative">
+            <div id="carousel" class="overflow-hidden">
+                <div class="carousel-inner flex transition-transform duration-500">
+                    <a href="/Productos#Productos" class="carousel-text w-full flex-shrink-0 text-end text-12xl active">Productos</a>
+                    <a href="/Servicios#Servicios" class="carousel-text w-full flex-shrink-0 text-end text-12xl hidden">Servicios</a>
+                    <a href="/Destacados#Destacados" class="carousel-text w-full flex-shrink-0 text-end text-12xl hidden">Destacados</a>
+                    <a href="/Nosotros#Nosotros" class="carousel-text w-full flex-shrink-0 text-end text-12xl hidden">Nosotros</a>
+                    <a href="/Contacto#Contacto" class="carousel-text w-full flex-shrink-0 text-end text-12xl hidden">Contacto</a>
+                </div>
+            </div>
+            <button id="prev" class="absolute left-5 top-1/2 transform -translate-y-1/2 bg-pink-600 text-white p-2 rounded-full">
+                &lt;
+            </button>
+            <button id="next" class="absolute right-5 top-1/2 transform -translate-y-1/2 bg-pink-600 text-white p-2 rounded-full">
+                &gt;
+            </button>
+        </div>
 
+        <style>
+            .carousel-inner {
+                color: sienna;
+                font-family: Sacramento;
+                font-size: 120px; /* Aumentar el tamaño del texto */
+                background-image: url('public/fotos/Carrusel/lemon1.jpg');
+                background-size: cover;
+                background-position: center;
+                transition: transform 0.5s ease;
+                height: 400px; /* Ajusta la altura según sea necesario */
+                display: flex; /* Asegura que los elementos estén en fila */
+                align-items: center; /* Centrar verticalmente */
+                justify-content: flex-end; /* Mover hacia la derecha */
+                padding-right: 350px; /* Menos espacio a la derecha */
+            }
+            .carousel-text {
+                margin-left: 20px; /* Ajusta el margen izquierdo para mover el texto a la izquierda */
+            }
+        </style>
+        
+        <script>
+            let currentIndex = 0;
+            const items = document.querySelectorAll('.carousel-text');
+            const totalItems = items.length;
+
+            function showItem(index) {
+                items.forEach((item, i) => {
+                    item.classList.toggle('hidden', i !== index);
+                });
+                const offset = -index * 100;
+                document.querySelector('.carousel-inner');
+
+            }
+
+            document.getElementById('next').addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % totalItems;
+                showItem(currentIndex);
+            });
+
+            document.getElementById('prev').addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+                showItem(currentIndex);
+            });
+
+            // Inicializar mostrando el primer elemento
+            showItem(currentIndex);
+        </script>
+    </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
