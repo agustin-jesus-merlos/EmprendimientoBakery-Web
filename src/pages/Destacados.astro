@@ -7,15 +7,68 @@ import Layout from '../layouts/Layout.astro';
     <section class="titulo">
         <div id="Destacados" ></div>
         <h2>Destacados</h2>
+
+        <p> En nuestra pastelería, cada producto es una creación única, hecha con los mejores ingredientes y mucha pasión. 
+            <br>Nuestro compromiso con la calidad y el detalle se refleja en cada bocado. 
+            <br> Aquí estan nuestros productos más destacados, que se han convertido en favoritos de nuestros clientes y que estamos seguros de que te encantarán.
+            <br> ¡Déjate sorprender por la calidad y el sabor de nuestras delicias!
+            </p>
     </section>
 
+    <section class="todos los productos">
+        <div class="container p-4 grid gap-6 max-w-lg mx-auto ">
+           
     
-
-	
-    <div class="h-screen">
-
-    </div>
+            <!-- Productos -->
+            <div class="productos ">
+                <!-- Producto: Macarons -->
+                <div id="macarons" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
+                    <img src="/fotos/Destacados/macarons 1.jpg" alt="Macarons de colores variados sobre fondo blanco" class="w-full rounded-lg mb-4">
+                    <div class="nombre text-2xl mb-2">Macarons</div>
+                    <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                    <div class="descripcion text-gray-600 mb-4">¡Dulzura y elegancia en cada bocado! Nuestros macarons artesanales son el detalle perfecto para cualquier ocasión.</div>
+                    <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                </div>
     
-	
-	
+                <!-- Producto: Cupcakes -->
+                <div id="cupcakes" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
+                    <img src="/fotos/Destacados/cupcake 1.jpg" alt="Cupcakes esponjosos decorados con crema colorida" class="w-full rounded-lg mb-4">
+                    <div class="nombre text-2xl mb-2">Cupcakes</div>
+                    <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                    <div class="descripcion text-gray-600 mb-4">¡Hay felicidad en cada bocado! Esponjosos y decorados artesanalmente. Una pequeña obra de arte que te hará sonreír.</div>
+                    <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                </div>
+    
+                <!-- Producto: Alfajores -->
+                <div id="alfajores" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
+                    <img src="/fotos/Destacados/alfajores 1.jpg" alt="Alfajores rellenos de dulce de leche y cubiertos con chocolate" class="w-full rounded-lg mb-4">
+                    <div class="nombre text-2xl mb-2">Alfajores</div>
+                    <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                    <div class="descripcion text-gray-600 mb-4">¡Una tradición irresistible! Rellenos de dulce de leche y cubiertos en chocolate, la combinación perfecta de dulzura.</div>
+                    <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                </div>
+    
+                <!-- Producto: Eclers -->
+                <div id="eclers" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
+                    <img src="/fotos/Destacados/eclers 1.jpg" alt="Eclairs rellenos de crema y cubiertos con glaseado brillante" class="w-full rounded-lg mb-4">
+                    <div class="nombre text-2xl mb-2">Eclers</div>
+                    <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                    <div class="descripcion text-gray-600 mb-4">Delicadamente rellenos con cremas suaves y cubiertos con glaseado brillante, ofrecen una experiencia de sabor única.</div>
+                    <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                </div>
+    
+                <!-- Producto: Cinnamon Rolls -->
+                <div id="cinnamon-rolls" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
+                    <img src="/fotos/Destacados/rolls 1.jpg" alt="Cinnamon rolls esponjosos con glaseado cremoso" class="w-full rounded-lg mb-4">
+                    <div class="nombre text-2xl mb-2">Cinnamon rolls</div>
+                    <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                    <div class="descripcion text-gray-600 mb-4">¡Suaves y esponjosos! Llenos de un delicioso relleno de canela y azúcar, coronados con un glaseado cremoso.</div>
+                    <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+    
 </Layout>

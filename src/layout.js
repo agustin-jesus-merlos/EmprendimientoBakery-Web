@@ -1,0 +1,3 @@
+const retornarTablaHTML = (producto) =>{
+    return 
+}

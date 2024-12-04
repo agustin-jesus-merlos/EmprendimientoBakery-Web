@@ -13,34 +13,41 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <section class="seccion-contacto p-6 bg-gray-100">
-        <div class="formulario-contacto md:flex md:-mx-1 mr-20"> <!-- Ajuste aquí -->
-            <div class="md:w-1/2 px-1 ml-20"> <!-- Cambié p-4 a px-2 -->
+        <div class="formulario-contacto md:flex md:-mx-1 mr-20"> 
+            <div class="md:w-1/2 px-1 ml-20"> 
                 <img src="/fotos/interior-mostrador2.jpg" alt="foto del local interior mostrador" class="  ">
             </div>
-            <div class="form md:w-1/2 px-1"> <!-- Cambié p-4 a px-2 -->
+            <div class="form md:w-1/2 px-1"> 
                 <h4 class="text-xl font-bold mb-4 font-sans" style="font-family: Arial, sans-serif;">Formulario de contacto</h4>
-                <div class="mb-4">
-                    <label for="name" class="block text-sm font-medium text-gray">Nombre y Apellido</label>
-                    <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-300" id="name">
-                </div>
-                <div class="mb-4">
-                    <label for="email" class="block text-sm font-medium text-gray">Email</label>
-                    <input type="email" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-300" id="email">
-                </div>
-                <div class="mb-4">
-                    <label for="celular" class="block text-sm font-medium text-gray">Celular</label>
-                    <input type="text" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-300" id="celular">
-                </div>
-                <div class="mb-4">
-                    <label for="mensaje" class="block text-sm font-medium text-gray">Mensaje</label>
-                    <textarea class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-300" id="mensaje" rows="4"></textarea>
-                </div>
-                <div>
-                    <input class="boton-enviar bg-pink-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-pink-500 transition duration-200" type="submit" value="Enviar">
-                </div>
+                <form action="https://formsubmit.co/agustin.jesus.merlos@hotmail.com" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm font-medium text-gray">Nombre y Apellido</label>
+                        <input type="text" name= "Nombre" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-300" id="name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm font-medium text-gray">Email</label>
+                        <input type="email" name= "E-mail" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-300" id="email">
+                    </div>
+                    <div class="mb-4">
+                        <label for="celular" class="block text-sm font-medium text-gray">Celular</label>
+                        <input type="text" name= "Celular" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-300" id="celular">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensaje" class="block text-sm font-medium text-gray">Mensaje</label>
+                        <textarea name= "Mensaje" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-pink-300" id="mensaje" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <input class="boton-enviar bg-pink-600 text-white font-semibold py-2 px-4 rounded-md hover:bg-pink-500 transition duration-200" type="submit" value="Enviar">
+                    </div>
+
+                    <input type="hidden" name="_next" value="http://localhost:4321/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
             </div>
         </div>
     </section>
+    
+    
 
     <section class="mapa-ubicacion p-6">
         <iframe 
