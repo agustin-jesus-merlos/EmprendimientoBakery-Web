@@ -15,12 +15,12 @@ import Layout from '../layouts/Layout.astro';
       
 
         <div class="flex flex-wrap justify-between p-4">
-            <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 b-4">
+            <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
                 <img src="/fotos/Servicios/desayuno-min.jpg" alt="Desayuno" class="w-full rounded-lg mb-4">
                 <div class="nombre text-2xl mb-2">Desayuno</div>
                 <div class="precio text-xl text-green-600 mb-2">$10.00</div>
                 <div class="descripcion text-gray-600 mb-4">Un delicioso desayuno con opciones saludables y gourmet para empezar el día con energía.</div>
-                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Desayuno', 10.00)">Agregar al carrito</button>
             </div>
         
             <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
@@ -28,46 +28,94 @@ import Layout from '../layouts/Layout.astro';
                 <div class="nombre text-2xl mb-2">Merienda</div>
                 <div class="precio text-xl text-green-600 mb-2">$10.00</div>
                 <div class="descripcion text-gray-600 mb-4">La merienda perfecta para disfrutar en cualquier momento del día.</div>
-                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Merienda', 10.00)">Agregar al carrito</button>
             </div>
-
+        
             <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
                 <img src="/fotos/Servicios/brunch1-min.jpg" alt="Brunch" class="w-full rounded-lg mb-4">
                 <div class="nombre text-2xl mb-2">Brunch</div>
                 <div class="precio text-xl text-green-600 mb-2">$10.00</div>
-                <div class="descripcion text-gray-600 mb-4"> Una deliciosa fusión de desayuno y almuerzo, para disfrutar de sabores irresistibles.</div>
-                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                <div class="descripcion text-gray-600 mb-4">Una deliciosa fusión de desayuno y almuerzo, para disfrutar de sabores irresistibles.</div>
+                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Brunch', 10.00)">Agregar al carrito</button>
             </div>
-      
+        
             <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
                 <img src="/fotos/Servicios/catering-min.jpg" alt="Catering" class="w-full rounded-lg mb-4">
                 <div class="nombre text-2xl mb-2">Catering</div>
                 <div class="precio text-xl text-green-600 mb-2">$10.00</div>
-                <div class="descripcion text-gray-600 mb-4">¡Transforma tu evento con nuestro servicio de catering! Brindamos una experiencia unica.</div>
-                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                <div class="descripcion text-gray-600 mb-4">¡Transforma tu evento con nuestro servicio de catering! Brindamos una experiencia única.</div>
+                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Catering', 10.00)">Agregar al carrito</button>
             </div>
-
+        
             <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
                 <img src="/fotos/Servicios/party-min.jpg" alt="Party" class="w-full rounded-lg mb-4">
                 <div class="nombre text-2xl mb-2">Party</div>
                 <div class="precio text-xl text-green-600 mb-2">$10.00</div>
                 <div class="descripcion text-gray-600 mb-4">¡Convierte tu celebración en un evento inolvidable con nuestro servicio de Party!</div>
-                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
             </div>
-        
-           
         </div>
+        
+
+        <script>
+            // Variables globales
+            let carrito = [];
+            let total = 0;
+        
+            // Función para agregar productos al carrito
+            function agregarAlCarrito(nombre, precio) {
+                // Buscar si el producto ya está en el carrito
+                let productoExistente = carrito.find(producto => producto.nombre === nombre);
+        
+                if (productoExistente) {
+                    // Si el producto existe, aumentar su cantidad
+                    productoExistente.cantidad++;
+                    productoExistente.precioTotal = productoExistente.precio * productoExistente.cantidad;
+                } else {
+                    // Si el producto no existe, agregarlo con cantidad 1
+                    carrito.push({ nombre, precio, cantidad: 1, precioTotal: precio });
+                }
+        
+                total = carrito.reduce((acc, producto) => acc + producto.precioTotal, 0); // Actualizar total
+                actualizarCarrito();
+            }
+        
+            // Función para actualizar la vista del carrito
+            function actualizarCarrito() {
+                const carritoLista = document.getElementById('carrito-lista');
+                const totalElement = document.getElementById('total');
+        
+                // Limpiar la lista antes de volver a llenarla
+                carritoLista.innerHTML = '';
+        
+                // Añadir productos al carrito en la vista
+                carrito.forEach(producto => {
+                    const item = document.createElement('li');
+                    item.textContent = `${producto.nombre} x${producto.cantidad} - $${producto.precioTotal.toFixed(2)}`;
+                    carritoLista.appendChild(item);
+                });
+        
+                // Actualizar total en la vista
+                totalElement.textContent = total.toFixed(2);
+            }
+        
+            // Asignar eventos de los botones al carrito
+            document.querySelectorAll('.btn-comprar').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    const nombre = event.target.closest('.producto').querySelector('.nombre').textContent;
+                    const precio = parseFloat(event.target.closest('.producto').querySelector('.precio').textContent.replace('$', ''));
+                    agregarAlCarrito(nombre, precio);
+                });
+            });
+       
+        
+            
+            
+            </script>
+        
 
 
 
 
     </section>
-
-    <section>
-
-    </section>
-	
-    
-	
-	
 </Layout>

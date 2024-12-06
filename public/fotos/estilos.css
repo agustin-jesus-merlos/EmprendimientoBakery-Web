@@ -267,5 +267,45 @@
     
 }
 
-/*seccion productos*/
+/* Estilo para el total del carrito */
+.carrito-total {
+    margin-top: 1rem;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carrito-total strong {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.carrito-total #total {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(235, 53, 180);
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #e74c3c;
+}
+
+/* Estilos de la lista de productos */
+#carrito-lista {
+    margin: 20px 0;
+    margin-left: 20px;
+}
+
+/* Estilos para cada ítem del carrito */
+#carrito-lista li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
 

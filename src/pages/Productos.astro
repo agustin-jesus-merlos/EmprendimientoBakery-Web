@@ -5,17 +5,264 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Bakery Shop" description="sitio web de pasteleria">
 	
     <section class="titulo" >
-        <div id="Productos" ></div>
-
-        
                 <h2>Productos</h2>
                 <p>¡Bienvenidos a nuestro rincón dulce! <p>Donde la pasión por la pastelería se convierte en deliciosas creaciones. 
                 En nuestra tienda, ofrecemos una amplia variedad de productos elaborados con los mejores ingredientes y un toque artesanal.
                 Desde esponjosos tortas y suaves budines hasta exquisitas medialunas y postres gourmet. ¡Cada bocado es una experiencia única!</p>
                 </p>
                 
-          
-                    <div class="flex justify-between p-4">
+                <div class="flex justify-between p-4">
+                    <!-- Producto 1 -->
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/medialunas.jpg" alt="Medialunas" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Medialunas</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">Estas suaves y hojaldradas delicias son ideales para disfrutar en el desayuno, la merienda o en cualquier momento.</div>
+                        <button id="btn-medialunas" class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                    </div>
+                
+                    <!-- Producto 2 -->
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/croissant1-min.jpg" alt="Croissant" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Croissant</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">Nuestros croissants son irresistibles. Cada bocado es un viaje al corazón de la pastelería francesa.</div>
+                        <button id="btn-croissant" class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                    </div>
+                
+                    <!-- Producto 3 -->
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/cookies1-min.jpg" alt="Cookies" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Cookies</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">¡El snack perfecto! Crujiente por fuera y suave por dentro, son una explosión de sabor en cada bocado.</div>
+                        <button id="btn-cookies" class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                    </div>
+                
+                    <!-- Producto 4 -->
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/torta1-min.jpg" alt="Tortas" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Tortas</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">¡Descubrí nuestras exquisitas tortas! El centro de atención perfecto para cualquier celebración!</div>
+                        <button id="btn-tortas" class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                    </div>
+                
+                    <!-- Producto 5 -->
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
+                        <img src="/fotos/Productos/budines1-min.jpg" alt="Budines" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Budines</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">¡Disfruta de nuestros deliciosos budines en cualquier momento del día! Ricos y caseros, combinan sabor y suavidad.</div>
+                        <button id="btn-budines" class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
+                    </div>
+                </div>
+
+               
+                    <div id="Servicios" ></div>
+                    <h2>Servicios</h2>
+
+                    <p>
+                         Nuestros servicios se caracterizan por la calidad de nuestros productos y la atencion personalizada de nuestros colaboradores. 
+                        <br> Podes elegir entre desayunos/meriendas, brunch y catering para eventos. 
+                         <br> Consultanos tus dudas a nuestro numero de Contacto y pronto te daremos una respuesta.<br>¡Gracias por elegirnos! 
+                    </p>
+
+                    <div class="flex flex-wrap justify-between p-4">
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Servicios/desayuno-min.jpg" alt="Desayuno" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Desayuno</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">Un delicioso desayuno con opciones saludables y gourmet para empezar el día con energía.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Desayuno', 10.00)">Agregar al carrito</button>
+                        </div>
+                
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                        <img src="/fotos/Servicios/merienda-min.jpg" alt="Merienda" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Merienda</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">La merienda perfecta para disfrutar en cualquier momento del día.</div>
+                        <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Merienda', 10.00)">Agregar al carrito</button>
+                    </div>
+                
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                        <img src="/fotos/Servicios/brunch1-min.jpg" alt="Brunch" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Brunch</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">Una deliciosa fusión de desayuno y almuerzo, para disfrutar de sabores irresistibles.</div>
+                        <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Brunch', 10.00)">Agregar al carrito</button>
+                    </div>
+                
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                        <img src="/fotos/Servicios/catering-min.jpg" alt="Catering" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Catering</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">¡Transforma tu evento con nuestro servicio de catering! Brindamos una experiencia única.</div>
+                        <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Catering', 10.00)">Agregar al carrito</button>
+                    </div>
+                
+                    <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                        <img src="/fotos/Servicios/party-min.jpg" alt="Party" class="w-full rounded-lg mb-4">
+                        <div class="nombre text-2xl mb-2">Party</div>
+                        <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                        <div class="descripcion text-gray-600 mb-4">¡Convierte tu celebración en un evento inolvidable con nuestro servicio de Party!</div>
+                        <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                    </div>
+                </div>
+                
+
+                
+                    
+                <div id="Destacados" ></div>
+                <h2>Destacados</h2>
+
+                    <p> En nuestra pastelería, cada producto es una creación única, hecha con los mejores ingredientes y mucha pasión. 
+                    <br>Nuestro compromiso con la calidad y el detalle se refleja en cada bocado. 
+                    <br> Aquí estan nuestros productos más destacados, que se han convertido en favoritos de nuestros clientes y que estamos seguros de que te encantarán.
+                    <br> ¡Déjate sorprender por la calidad y el sabor de nuestras delicias!
+                    </p>
+
+                    <div class="flex flex-wrap justify-between p-4">
+
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/macarons 1.jpg" alt="Macarons" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Macarons</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">¡Dulzura y elegancia en cada bocado! Nuestros macarons artesanales son el detalle perfecto para cualquier ocasión.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/cupcake 1.jpg" alt="Cupcakes" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Cupcakes</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">¡Hay felicidad en cada bocado! Esponjosos y decorados artesanalmente. Una pequeña obra de arte que te hará sonreír.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/alfajores 1.jpg" alt="alfajores" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Alfajores</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">¡Una tradición irresistible! Rellenos de dulce de leche y cubiertos en chocolate, la combinación perfecta de dulzura.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/eclers 1.jpg" alt="Eclers" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Eclers</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">Delicadamente rellenos con cremas suaves y cubiertos con glaseado brillante, ofrecen una experiencia de sabor única.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/rolls 1.jpg" alt="cinnamon-rolls" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Cinnamon rolls</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">¡Suaves y esponjosos! Llenos de un delicioso relleno de canela y azúcar, coronados con un glaseado cremoso.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                
+                
+                
+                
+                <script>
+                    // Variables globales
+                    let carrito = [];
+                    let total = 0;
+                
+                    // Función para agregar productos al carrito
+                    function agregarAlCarrito(nombre, precio) {
+                        // Buscar si el producto ya está en el carrito
+                        let productoExistente = carrito.find(producto => producto.nombre === nombre);
+                
+                        if (productoExistente) {
+                            // Si el producto existe, aumentar su cantidad
+                            productoExistente.cantidad++;
+                            productoExistente.precioTotal = productoExistente.precio * productoExistente.cantidad;
+                        } else {
+                            // Si el producto no existe, agregarlo con cantidad 1
+                            carrito.push({ nombre, precio, cantidad: 1, precioTotal: precio });
+                        }
+                
+                        total = carrito.reduce((acc, producto) => acc + producto.precioTotal, 0); // Actualizar total
+                        actualizarCarrito();
+                    }
+                
+                    // Función para actualizar la vista del carrito
+                    function actualizarCarrito() {
+                        const carritoLista = document.getElementById('carrito-lista');
+                        const totalElement = document.getElementById('total');
+                
+                        // Limpiar la lista antes de volver a llenarla
+                        carritoLista.innerHTML = '';
+                
+                        // Añadir productos al carrito en la vista
+                        carrito.forEach(producto => {
+                            const item = document.createElement('li');
+                            item.textContent = `${producto.nombre} x${producto.cantidad} - $${producto.precioTotal.toFixed(2)}`;
+                            carritoLista.appendChild(item);
+                        });
+                
+                        // Actualizar total en la vista
+                        totalElement.textContent = total.toFixed(2);
+                    }
+                
+                    // Asignar eventos de los botones al carrito
+                    document.querySelectorAll('.btn-comprar').forEach(button => {
+                        button.addEventListener('click', function(event) {
+                            const nombre = event.target.closest('.producto').querySelector('.nombre').textContent;
+                            const precio = parseFloat(event.target.closest('.producto').querySelector('.precio').textContent.replace('$', ''));
+                            agregarAlCarrito(nombre, precio);
+                        });
+                    });
+
+                        // Función para limpiar el carrito
+                        document.getElementById('btn-limpiar').addEventListener('click', function() {
+                            const carritoLista = document.getElementById('carrito-lista');
+                            carritoLista.innerHTML = '';  // Limpiar lista de productos
+                            document.getElementById('total').innerText = '0.00';  // Resetear total
+                        });
+
+                        // Función para finalizar la compra y redirigir a WhatsApp
+                        document.getElementById('btn-finalizar').addEventListener('click', function() {
+                            const total = document.getElementById('total').innerText;
+                            const carritoLista = document.getElementById('carrito-lista');
+                            const productos = [];
+
+                            // Obtener los nombres de los productos en el carrito
+                            carritoLista.querySelectorAll('li').forEach(function(item) {
+                                productos.push(item.textContent.trim());
+                            });
+
+                            // Construir el mensaje que se enviará por WhatsApp
+                            let mensaje = `¡Hola! Quiero realizar una compra de los siguientes productos:\n\n`;
+                            productos.forEach(function(producto) {
+                                mensaje += `- ${producto}\n`;
+                            });
+                            mensaje += `\nEl total es: $${total}\n\nPor favor, contáctame para confirmar mi pedido.`;
+
+                            // Redirigir a WhatsApp con el mensaje
+                            const numeroWhatsApp = '5492235464854';  // Reemplaza con tu número de WhatsApp
+                            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+                            
+                            window.open(urlWhatsApp, '_blank');  // Abrir enlace de WhatsApp
+                        });
+
+                
+                    
+                    
+                    </script>
+    
+
+               
+               
+
+               
+                
+               
+
+    </section>
+  <!--<div id="Productos" class="container" ></div>
+                     <div class="flex justify-between p-4">
                         <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72">
                             <img src="/fotos/Productos/medialunas.jpg" alt="Medialunas" class="w-full rounded-lg mb-4">
                             <div class="nombre text-2xl mb-2">Medialunas</div>
@@ -55,35 +302,8 @@ import Layout from '../layouts/Layout.astro';
                             <div class="descripcion text-gray-600 mb-4">¡Disfruta de nuestros deliciosos budines en cualquier momento del dia! Ricos y caseros, combinan sabor y suavidad.</div>
                             <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
                         </div>
-                    </div>
-               
+                    </div>-->
 
-    </section>
-
-<!---
-  <div class="producto">
-            <img class="m-40 h-40" src="/public/fotos/Productos/medialunas-ap.webp" alt="Producto 2">
-            <div class="Medialunas">Medialunas</div>
-            <div class="precio">$500.00</div>
-        </div>
-    
-    
-    <div class="producto">
-        <div class="nombre">Producto 2</div>
-        <div class="precio">$15.00</div>
-    </div>
-    
-    <div class="producto">
-        <div class="nombre">Producto 3</div>
-        <div class="precio">$20.00</div>
-    </div>
-    
-    <div class="producto">
-        <div class="nombre">Producto 4</div>
-        <div class="precio">$25.00</div>
-    </div>
-
-     -->
     
 	
 </Layout>

@@ -49,7 +49,7 @@
     },
     {
       "id": 9,
-      "imagen": "/fotos/Servicios/catering-min.jpg",
+      "imagen": "public/fotos/Servicios/catering-min.jpg",
       "nombre": "Catering",
       "precio": 35000
     },
@@ -61,31 +61,31 @@
     },
     {
       "id": 11,
-      "imagen": "/fotos/Destacados/macarons1.jpg",
+      "imagen": "public/fotos/Destacados/macarons 1.jpg",
       "nombre": "Macarons",
       "precio": 4500
     },
     {
       "id": 12,
-      "imagen": "/fotos/Destacados/cupcake1.jpg",
+      "imagen": "public/fotos/Destacados/cupcake 1.jpg",
       "nombre": "Cupcake",
       "precio": 4500
     },
     {
       "id": 13,
-      "imagen": "/fotos/Destacados/alfajores1.jpg",
+      "imagen": "public/fotos/Destacados/alfajores 1.jpg",
       "nombre": "Alfajores",
       "precio": 4500
     },
     {
       "id": 14,
-      "imagen": "/fotos/Destacados/eclers1.jpg",
+      "imagen": "public/fotos/Destacados/eclers 1.jpg",
       "nombre": "Eclers",
       "precio": 4500
     },
     {
       "id": 15,
-      "imagen": "/fotos/Destacados/rolls1.jpg",
+      "imagen": "public/fotos/Destacados/rolls 1.jpg",
       "nombre": "Cinnamon Rolls",
       "precio": 4500
     }

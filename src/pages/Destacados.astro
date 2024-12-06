@@ -5,7 +5,7 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Bakery Shop" description="sitio web de pasteleria">
 
     <section class="titulo">
-        <div id="Destacados" ></div>
+        <!-- <div id="Destacados" ></div>-->
         <h2>Destacados</h2>
 
         <p> En nuestra pastelería, cada producto es una creación única, hecha con los mejores ingredientes y mucha pasión. 
@@ -15,13 +15,14 @@ import Layout from '../layouts/Layout.astro';
             </p>
     </section>
 
-    <section class="todos los productos">
+    <!-- <section>
         <div class="container p-4 grid gap-6 max-w-lg mx-auto ">
            
-    
-            <!-- Productos -->
+
+           
+
             <div class="productos ">
-                <!-- Producto: Macarons -->
+               
                 <div id="macarons" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
                     <img src="/fotos/Destacados/macarons 1.jpg" alt="Macarons de colores variados sobre fondo blanco" class="w-full rounded-lg mb-4">
                     <div class="nombre text-2xl mb-2">Macarons</div>
@@ -30,7 +31,6 @@ import Layout from '../layouts/Layout.astro';
                     <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
                 </div>
     
-                <!-- Producto: Cupcakes -->
                 <div id="cupcakes" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
                     <img src="/fotos/Destacados/cupcake 1.jpg" alt="Cupcakes esponjosos decorados con crema colorida" class="w-full rounded-lg mb-4">
                     <div class="nombre text-2xl mb-2">Cupcakes</div>
@@ -39,7 +39,6 @@ import Layout from '../layouts/Layout.astro';
                     <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
                 </div>
     
-                <!-- Producto: Alfajores -->
                 <div id="alfajores" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
                     <img src="/fotos/Destacados/alfajores 1.jpg" alt="Alfajores rellenos de dulce de leche y cubiertos con chocolate" class="w-full rounded-lg mb-4">
                     <div class="nombre text-2xl mb-2">Alfajores</div>
@@ -48,7 +47,6 @@ import Layout from '../layouts/Layout.astro';
                     <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
                 </div>
     
-                <!-- Producto: Eclers -->
                 <div id="eclers" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
                     <img src="/fotos/Destacados/eclers 1.jpg" alt="Eclairs rellenos de crema y cubiertos con glaseado brillante" class="w-full rounded-lg mb-4">
                     <div class="nombre text-2xl mb-2">Eclers</div>
@@ -57,7 +55,6 @@ import Layout from '../layouts/Layout.astro';
                     <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300">Agregar al carrito</button>
                 </div>
     
-                <!-- Producto: Cinnamon Rolls -->
                 <div id="cinnamon-rolls" class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-full">
                     <img src="/fotos/Destacados/rolls 1.jpg" alt="Cinnamon rolls esponjosos con glaseado cremoso" class="w-full rounded-lg mb-4">
                     <div class="nombre text-2xl mb-2">Cinnamon rolls</div>
@@ -67,7 +64,109 @@ import Layout from '../layouts/Layout.astro';
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+
+
+    <div id="Destacados" ></div>
+                    
+
+                    <div class="flex flex-wrap justify-between p-4">
+
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/macarons 1.jpg" alt="Macarons" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Macarons</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">¡Dulzura y elegancia en cada bocado! Nuestros macarons artesanales son el detalle perfecto para cualquier ocasión.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/cupcake 1.jpg" alt="Cupcakes" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Cupcakes</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">¡Hay felicidad en cada bocado! Esponjosos y decorados artesanalmente. Una pequeña obra de arte que te hará sonreír.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/alfajores 1.jpg" alt="alfajores" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Alfajores</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">¡Una tradición irresistible! Rellenos de dulce de leche y cubiertos en chocolate, la combinación perfecta de dulzura.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/eclers 1.jpg" alt="Eclers" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Eclers</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">Delicadamente rellenos con cremas suaves y cubiertos con glaseado brillante, ofrecen una experiencia de sabor única.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                        <div class="producto border rounded-lg p-6 text-center shadow-lg transition-transform duration-200 hover:scale-105 w-72 mx-2 mb-4">
+                            <img src="/fotos/Destacados/rolls 1.jpg" alt="cinnamon-rolls" class="w-full rounded-lg mb-4">
+                            <div class="nombre text-2xl mb-2">Cinnamon rolls</div>
+                            <div class="precio text-xl text-green-600 mb-2">$10.00</div>
+                            <div class="descripcion text-gray-600 mb-4">¡Suaves y esponjosos! Llenos de un delicioso relleno de canela y azúcar, coronados con un glaseado cremoso.</div>
+                            <button class="btn-comprar bg-pink-500 text-white px-4 py-2 rounded hover:bg-pink-800 transition-colors duration-300" onclick="agregarAlCarrito('Party', 10.00)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                
+                
+                
+                
+                <script>
+                    // Variables globales
+                    let carrito = [];
+                    let total = 0;
+                
+                    // Función para agregar productos al carrito
+                    function agregarAlCarrito(nombre, precio) {
+                        // Buscar si el producto ya está en el carrito
+                        let productoExistente = carrito.find(producto => producto.nombre === nombre);
+                
+                        if (productoExistente) {
+                            // Si el producto existe, aumentar su cantidad
+                            productoExistente.cantidad++;
+                            productoExistente.precioTotal = productoExistente.precio * productoExistente.cantidad;
+                        } else {
+                            // Si el producto no existe, agregarlo con cantidad 1
+                            carrito.push({ nombre, precio, cantidad: 1, precioTotal: precio });
+                        }
+                
+                        total = carrito.reduce((acc, producto) => acc + producto.precioTotal, 0); // Actualizar total
+                        actualizarCarrito();
+                    }
+                
+                    // Función para actualizar la vista del carrito
+                    function actualizarCarrito() {
+                        const carritoLista = document.getElementById('carrito-lista');
+                        const totalElement = document.getElementById('total');
+                
+                        // Limpiar la lista antes de volver a llenarla
+                        carritoLista.innerHTML = '';
+                
+                        // Añadir productos al carrito en la vista
+                        carrito.forEach(producto => {
+                            const item = document.createElement('li');
+                            item.textContent = `${producto.nombre} x${producto.cantidad} - $${producto.precioTotal.toFixed(2)}`;
+                            carritoLista.appendChild(item);
+                        });
+                
+                        // Actualizar total en la vista
+                        totalElement.textContent = total.toFixed(2);
+                    }
+                
+                    // Asignar eventos de los botones al carrito
+                    document.querySelectorAll('.btn-comprar').forEach(button => {
+                        button.addEventListener('click', function(event) {
+                            const nombre = event.target.closest('.producto').querySelector('.nombre').textContent;
+                            const precio = parseFloat(event.target.closest('.producto').querySelector('.precio').textContent.replace('$', ''));
+                            agregarAlCarrito(nombre, precio);
+                        });
+                    });
+               
+                
+                    
+                    
+                    </script>
     
    
     
